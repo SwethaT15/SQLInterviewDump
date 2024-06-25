@@ -1,3 +1,4 @@
+Question1
 Find managers with at least 7 direct reporting employees. In situations where user is reporting to himself/herself, count that also.Output first names of managers.
 
 select first_name from employee where id in (select manager_id from employee group by manager_id
